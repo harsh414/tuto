@@ -29,6 +29,11 @@ Route::get('/payments/create','PaymentController@create')->middleware('auth');
 Route::post('/payments','PaymentController@store')->name('pay');
 
 Route::get('notifications','UserNotificationController@index');
+//Route::get('markasread',function (){
+//    auth()->user()->unreadNotifications->markAsRead();
+//    return redirect()->back();
+//})->name('markasread');
+Route::post('markasread','UserNotificationController@read');
 
 Route::get('/dashboard', 'DashboardController@index');
 Route::get('/homee',function (){

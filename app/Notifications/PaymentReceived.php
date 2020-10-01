@@ -56,7 +56,7 @@ class PaymentReceived extends Notification
     public function toArray($notifiable)
     {
         return [
-            'amount'=>$this->amount
+            'data'=>$this->amount
         ];
     }
 }

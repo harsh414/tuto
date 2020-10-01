@@ -30,6 +30,29 @@
                         </li>
                     @endif
                 @else
+{{--                    <li><a href="#"></a></li>--}}
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            <i class="fa fa-bell">
+                                @if(count(auth()->user()->unreadNotifications))
+                                <span class="badge badge-dark" id="spanR">{{count(auth()->user()->unreadNotifications)}}</span>
+                                @endif
+                            </i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" id="ulrefresh">
+                            <form method="post" id="readall">
+                                {{csrf_field()}}
+                                <button type="submit" class="btn btn-primary" style="width: auto;">Mark all as read</button>
+                            </form>
+                            @foreach(auth()->user()->unreadNotifications as $notification)
+                               <li style="background: lightgray">{{$notification->data['data']}}</li>
+                            @endforeach
+                                @foreach(auth()->user()->readNotifications as $notification)
+                                    <li>{{$notification->data['data']}}</li>
+                                @endforeach
+                        </ul>
+                    </li>
                     <li class="nav-item dropdown">
                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
@@ -52,3 +75,24 @@
         </div>
     </div>
 </nav>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $("#readall").on('submit',function (e){
+            e.preventDefault();
+            var formData= $("#readall").serializeArray();
+            $.ajax({
+                url:"markasread",
+                type:"post",
+                data:formData,
+                dataType:"json",
+                success:function(response) {
+                    if (response.success)
+                    {
+                        $('#app').load(location.href +  ' #app');
+                    }
+                }
+
+            })
+        })
+    });
+</script>

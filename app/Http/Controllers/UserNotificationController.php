@@ -13,7 +13,18 @@ class UserNotificationController extends Controller
      */
     public function index()
     {
-        return view('notifications.show');
+        return view('notifications.show')->with([
+            'notifications'=>auth()->user()->notifications
+        ]);
+    }
+
+    public function read()
+    {
+        auth()->user()->unreadNotifications->markAsRead();
+        return response([
+            'success' => true,
+            'message' => 'marked as read',
+        ]);
     }
 
     /**
@@ -34,7 +45,7 @@ class UserNotificationController extends Controller
      */
     public function store(Request $request)
     {
-        //
+
     }
 
     /**
@@ -56,7 +67,7 @@ class UserNotificationController extends Controller
      */
     public function edit($id)
     {
-        //
+
     }
 
     /**
