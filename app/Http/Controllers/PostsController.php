@@ -31,6 +31,11 @@ class PostsController extends Controller
 //        ->take(2)->get();   .... for getting reqd number of psot
     }
 
+    public function try()
+    {
+
+    }
+
     /**
      * Show the form for creating a new resource.
      *
