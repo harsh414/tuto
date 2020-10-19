@@ -10,15 +10,15 @@ use Illuminate\Notifications\Notification;
 class PaymentReceived extends Notification
 {
     use Queueable;
-    protected $amount;
+    protected $data;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct($amount)
+    public function __construct($data)
     {
-        $this->amount=$amount;
+        $this->data=$data;
     }
 
     /**
@@ -56,7 +56,7 @@ class PaymentReceived extends Notification
     public function toArray($notifiable)
     {
         return [
-            'data'=>$this->amount
+             'data'=>'this is noti',
         ];
     }
 }

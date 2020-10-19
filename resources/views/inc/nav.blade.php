@@ -43,7 +43,7 @@
                         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" id="ulrefresh">
                             <form method="post" id="readall">
                                 {{csrf_field()}}
-                                <button type="submit" class="btn btn-primary" style="width: auto;">Mark all as read</button>
+                                <li style="background-color: #1d68a7;color:white;cursor: pointer" id="mar">Mark all as read</li>
                             </form>
                             @foreach(auth()->user()->unreadNotifications as $notification)
                                <li style="background: lightgray">{{$notification->data['data']}}</li>
@@ -77,13 +77,13 @@
 </nav>
 <script type="text/javascript">
     $(document).ready(function (){
-        $("#readall").on('submit',function (e){
-            e.preventDefault();
+        $("#mar").click(function (){
             var formData= $("#readall").serializeArray();
+            var name='harsh';
             $.ajax({
                 url:"markasread",
                 type:"post",
-                data:formData,
+                data: formData,
                 dataType:"json",
                 success:function(response) {
                     if (response.success)
