@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,7 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b13343-9fd7-4667-8025-2ba631b594a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutorial.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_153314_add_google_id_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_29_153314_add_google_id_to_users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +155,9 @@
       <path value="$PROJECT_DIR$/vendor/jrm2k6/cloudder" />
       <path value="$PROJECT_DIR$/vendor/league/oauth1-client" />
       <path value="$PROJECT_DIR$/vendor/laravel/socialite" />
+      <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
     </include_path>
   </component>
   <component name="ProjectId" id="1i0Bpo3sNYUS7nDvPxR534O6EPh" />
@@ -198,7 +213,10 @@
       <workItem from="1602406471343" duration="18000" />
       <workItem from="1602945311442" duration="1621000" />
       <workItem from="1602951450323" duration="4561000" />
-      <workItem from="1603097096617" duration="25000" />
+      <workItem from="1603097096617" duration="621000" />
+      <workItem from="1604484519203" duration="1986000" />
+      <workItem from="1604515146006" duration="44000" />
+      <workItem from="1606050059730" duration="6906000" />
     </task>
     <servers />
   </component>
@@ -218,18 +236,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1602947805364">
+    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1604515187697">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1602947805364" />
-    <state x="382" y="197" key="run.anything.popup" timestamp="1601286670962">
+    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1604515187697" />
+    <state x="431" y="0" width="1032" height="585" key="dock-window-1" timestamp="1606069379701">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="382" y="197" key="run.anything.popup/0.0.1449.864@0.0.1449.864" timestamp="1601286670962" />
-    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1602947043874">
+    <state x="431" y="0" width="1032" height="585" key="dock-window-1/0.0.1449.864@0.0.1449.864" timestamp="1606069379701" />
+    <state x="382" y="197" key="run.anything.popup" timestamp="1606056876717">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1602947043874" />
+    <state x="382" y="197" key="run.anything.popup/0.0.1449.864@0.0.1449.864" timestamp="1606056876717" />
+    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1606054317426">
+      <screen x="0" y="0" width="1449" height="864" />
+    </state>
+    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1606054317426" />
     <state x="400" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1474.864@0.0.1474.864" timestamp="1601037772597" />
   </component>
   <component name="XDebuggerManager">

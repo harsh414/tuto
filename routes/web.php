@@ -43,8 +43,16 @@ Route::get('/dashboard', 'DashboardController@index');
 Route::get('/homee',function (){
     return view('homee');
 });
+
+
 Route::resource('posts','PostsController');
 Route::get('ajax/create','TestsController@create');
 Route::post('ajax/create','TestsController@store');
+
+Route::get('/uploadfile',function (){
+    return view('uploadFile');
+});
+
+Route::post('/upload','DashboardController@upload')->name('upload');
 
 
