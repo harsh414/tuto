@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\User;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -42,6 +43,16 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+//    for recaptcha
+//    THIS VALIDATE LOGIN FN OVERRIDES EXISTING
+    protected function validateLogin(Request $request)
+    {
+        $request->validate([
+            'g-recaptcha-response' => 'required|captcha',
+             $this->username() => 'required|string',
+            'password' => 'required|string',
+        ]);
+    }
 
 //    google login part below
     public function redirectToProvider($service)

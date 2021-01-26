@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('scripts')
+    {!! NoCaptcha::renderJs() !!}
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -50,6 +52,25 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <div class="col-md-6 offset-md-4" style="justify-content: center">
+                                {!! NoCaptcha::display(['data-theme' => 'dark']) !!}
+                            </div>
+                        </div>
+
+{{--                        <div class="form-group row" style="display:block">--}}
+{{--                            @if ($errors->has('g-recaptcha-response'))--}}
+{{--                                <span class="help-block">--}}
+{{--                            <strong>{{ $errors->first('g-recaptcha-response') }}</strong>--}}
+{{--                            </span>--}}
+{{--                            @endif--}}
+{{--                        </div>--}}
+
+{{--                        @if ($errors->has('g-recaptcha-response'))--}}
+{{--                            <span class="help-block">--}}
+{{--                            <strong>{{ $errors->first('g-recaptcha-response') }}</strong>--}}
+{{--                            </span>--}}
+{{--                        @endif--}}
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">

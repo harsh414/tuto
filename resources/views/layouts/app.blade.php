@@ -33,6 +33,7 @@
             @yield('content2')
         </div>
     </div>
+    @yield('scripts');
 </body>
 </html>
 

@@ -26,13 +26,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tutorial.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tutorial.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_29_153314_add_google_id_to_users.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_29_153314_add_google_id_to_users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,6 +157,7 @@
       <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
       <path value="$PROJECT_DIR$/vendor/mtdowling/jmespath.php" />
       <path value="$PROJECT_DIR$/vendor/league/flysystem-aws-s3-v3" />
+      <path value="$PROJECT_DIR$/vendor/anhskohbo/no-captcha" />
     </include_path>
   </component>
   <component name="ProjectId" id="1i0Bpo3sNYUS7nDvPxR534O6EPh" />
@@ -171,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bagisto" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -217,6 +217,12 @@
       <workItem from="1604484519203" duration="1986000" />
       <workItem from="1604515146006" duration="44000" />
       <workItem from="1606050059730" duration="6906000" />
+      <workItem from="1606148879167" duration="1491000" />
+      <workItem from="1606204579101" duration="912000" />
+      <workItem from="1608983857682" duration="52000" />
+      <workItem from="1610397098433" duration="1240000" />
+      <workItem from="1610456104650" duration="2510000" />
+      <workItem from="1610524338095" duration="588000" />
     </task>
     <servers />
   </component>
@@ -236,10 +242,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1604515187697">
+    <state x="505" y="187" key="FileChooserDialogImpl" timestamp="1610470453078">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1604515187697" />
+    <state x="505" y="187" key="FileChooserDialogImpl/0.0.1449.864@0.0.1449.864" timestamp="1610470453078" />
     <state x="431" y="0" width="1032" height="585" key="dock-window-1" timestamp="1606069379701">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
@@ -248,11 +254,10 @@
       <screen x="0" y="0" width="1449" height="864" />
     </state>
     <state x="382" y="197" key="run.anything.popup/0.0.1449.864@0.0.1449.864" timestamp="1606056876717" />
-    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1606054317426">
+    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1610397887809">
       <screen x="0" y="0" width="1449" height="864" />
     </state>
-    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1606054317426" />
-    <state x="400" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1474.864@0.0.1474.864" timestamp="1601037772597" />
+    <state x="393" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1449.864@0.0.1449.864" timestamp="1610397887809" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
